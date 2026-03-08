@@ -1,4 +1,4 @@
-# Yagami - Concurrent Web Link Checker
+# Yagami
 
 A concurrent web link checker that parses sitemap.xml files, crawls pages, extracts links, checks their HTTP status, displays real-time TUI progress, and exports results to CSV.
 
