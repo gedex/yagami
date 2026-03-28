@@ -330,6 +330,27 @@ Tests cover:
 - HTTP status checking
 - Error handling
 
+## Release Process
+
+To create a new release:
+
+1. **Update version** in `Cargo.toml`:
+   ```toml
+   [package]
+   version = "x.y.z"
+   ```
+
+2. **Create and push a git tag**:
+   ```bash
+   git tag x.y.z
+   git push origin x.y.z
+   ```
+
+3. **GitHub Action handles the rest**: The CI/CD pipeline will automatically:
+   - Build binaries for all platforms
+   - Create a GitHub release
+   - Publish release artifacts
+
 ## License
 
 MIT
