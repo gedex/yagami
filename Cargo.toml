@@ -3,6 +3,8 @@ name = "yagami"
 version = "0.1.0"
 edition = "2024"
 repository = "https://github.com/gedex/yagami"
+homepage = "https://github.com/gedex/yagami"
+description = "A concurrent web link checker that parses sitemap.xml files, crawls pages, extracts links, checks their HTTP status, displays real-time TUI progress, and exports results to CSV"
 
 [dependencies]
 tokio = { version = "1.42", features = ["full"] }
