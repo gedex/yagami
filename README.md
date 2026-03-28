@@ -18,10 +18,31 @@ A concurrent web link checker that parses sitemap.xml files, crawls pages, extra
 
 ## Installation
 
+### Pre-built Binaries
+
+Download the latest release for your platform from the [GitHub releases page](https://github.com/gedex/yagami/releases).
+
+Available platforms:
+- **macOS**: ARM64 (Apple Silicon) and x86_64 (Intel)
+- **Linux**: ARM64 and x86_64
+- **Windows**: x86_64
+
+### Shell Installer (macOS and Linux)
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/gedex/yagami/releases/latest/download/yagami-installer.sh | sh
+```
+
+### Homebrew (macOS and Linux)
+
+```bash
+brew install gedex/tap/yagami
+```
+
 ### From Source
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/gedex/yagami
 cd yagami
 cargo build --release
 ```
