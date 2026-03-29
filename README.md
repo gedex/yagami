@@ -18,6 +18,12 @@ A concurrent web link checker that parses sitemap.xml files, crawls pages, extra
 
 ## Installation
 
+### Cargo (crates.io)
+
+```bash
+cargo install yagami
+```
+
 ### Pre-built Binaries
 
 Download the latest release for your platform from the [GitHub releases page](https://github.com/gedex/yagami/releases).
@@ -361,13 +367,22 @@ To create a new release:
    version = "x.y.z"
    ```
 
-2. **Create and push a git tag**:
+2. **Publish to crates.io** (one-time setup required):
+   ```bash
+   # First time only: login to crates.io
+   cargo login
+
+   # Publish the crate
+   cargo publish
+   ```
+
+3. **Create and push a git tag**:
    ```bash
    git tag x.y.z
    git push origin x.y.z
    ```
 
-3. **GitHub Action handles the rest**: The CI/CD pipeline will automatically:
+4. **GitHub Action handles the rest**: The CI/CD pipeline will automatically:
    - Build binaries for all platforms
    - Create a GitHub release
    - Publish release artifacts

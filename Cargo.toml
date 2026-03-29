@@ -2,9 +2,13 @@
 name = "yagami"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
 repository = "https://github.com/gedex/yagami"
 homepage = "https://github.com/gedex/yagami"
 description = "A concurrent sitemap crawler that validates web links and exports results to CSV"
+keywords = ["sitemap", "crawler", "link-checker", "web", "seo"]
+categories = ["command-line-utilities", "web-programming"]
+readme = "README.md"
 
 [dependencies]
 tokio = { version = "1.42", features = ["full"] }
